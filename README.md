@@ -143,22 +143,22 @@ Speed values: The script prints the first few converted speed values (in km/h) t
 Merged DataFrame: A preview of the first few rows of the merged DataFrame is printed, showing how the GNSS, velocity, and image data have been combined.
 File paths: The script prints the paths of the generated files (HTML map, colorbar.png) to confirm their successful creation.
 Practical Applications and Use Cases:
-Vehicle Route Visualization:
+### Vehicle Route Visualization:
 
 The script provides a way to visually track and analyze vehicle movement, including speed changes, using GNSS and velocity data over time.
 The route can be examined on a map, providing insights into driving patterns and environmental contexts with the help of Basler images.
-Fleet Management and Navigation Analysis:
+### Fleet Management and Navigation Analysis:
 
 This can be used for managing vehicle fleets by providing real-time or historical route tracking and performance metrics based on speed.
-Autonomous Vehicle Testing:
+### Autonomous Vehicle Testing:
 
 During the testing of autonomous or semi-autonomous vehicles, this visualization allows the assessment of vehicle behavior along the route, including its response to speed limits and road conditions (as captured by the Basler images).
-Research and Development:
+### Research and Development:
 
 The combination of map, speed data, and visual context provides researchers with tools to study the performance of navigation algorithms, analyze speed patterns, and correlate visual data with GNSS and velocity readings.
-Environmental and Road Condition Monitoring:
+### Environmental and Road Condition Monitoring:
 
 By linking GNSS data with images, the output can be used to study road conditions or environmental factors, such as road quality, traffic density, or weather conditions, at different points on the route.
-Summary
+## Summary
 The script processes GNSS, velocity, and image data to produce an interactive map that combines geographic information, speed, and visual context. The output allows for in-depth analysis of vehicle movement with clear, color-coded visual markers and relevant images. The additional CSV files and color bar offer tools for further data exploration and analysis. This comprehensive output is useful for navigation tracking, fleet management, vehicle testing, and research applications.
 
