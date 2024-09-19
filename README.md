@@ -162,3 +162,6 @@ By linking GNSS data with images, the output can be used to study road condition
 ## Summary
 The script processes GNSS, velocity, and image data to produce an interactive map that combines geographic information, speed, and visual context. The output allows for in-depth analysis of vehicle movement with clear, color-coded visual markers and relevant images. The additional CSV files and color bar offer tools for further data exploration and analysis. This comprehensive output is useful for navigation tracking, fleet management, vehicle testing, and research applications.
 
+### License
+This project is licensed under the MIT License.
+
