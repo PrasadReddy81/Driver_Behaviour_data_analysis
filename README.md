@@ -1,4 +1,4 @@
-# Driver_Behaviour_data_analysis
+# Indian_Driver_Behaviour_data_analysis
 
 This project processes GNSS, velocity, and image data to create a color-coded map based on vehicle speed. The map also includes image popups that correspond to timestamps in the data. The project uses GNSS data to plot latitude and longitude points, velocity data to calculate speed, and Basler image data to attach relevant images to each point on the map.
 
@@ -37,7 +37,7 @@ The workflow of the script involves several key steps, from reading raw data fil
 
 ### 1. Loading and Processing GNSS Data (bestpos.csv)
 The script begins by loading the GNSS data from a CSV file (bestpos.csv), which contains time, latitude, and longitude fields.
-The pandas library is used to read the CSV file, and the relevant columns (time, .lat, and .lon) are extracted and stored in lists.
+The pandas library is used to read the CSV file, and the relevant columns '(time, .lat, and .lon)' are extracted and stored in lists.
 A DataFrame is created using this data. This GNSS DataFrame serves as the foundation for positioning the vehicle’s location on the map.
 ### Example columns in bestpos.csv:
 
@@ -75,7 +75,7 @@ horizontal_speed: Speed in km/h.
 image_filename: Filename of the corresponding Basler image.
 ### 5. Image Association
 The script searches through the /baleno_images directory to find the nearest image filename based on the timestamp.
-The image filenames follow a specific naming pattern (image_%Y-%m-%d-%H-%M-%S.%f.jpg), and the script uses the timestamp to match the images to GNSS data points.
+The image filenames follow a specific naming pattern ( 'image_%Y-%m-%d-%H-%M-%S.%f.jpg' ), and the script uses the timestamp to match the images to GNSS data points.
 If an image is found for a particular GNSS point, the filename is added to the merged DataFrame.
 ### 6. Creating the Map with Folium
 Once the data is merged, the script creates a visual map using the folium library. The map is centered around the mean latitude and longitude values from the GNSS data.
