@@ -42,8 +42,8 @@ A DataFrame is created using this data. This GNSS DataFrame serves as the founda
 ### Example columns in bestpos.csv:
 
 time: Timestamp of the GNSS data.
-  .lat: Latitude value.
-  .lon: Longitude value.
+  `.lat: Latitude value.`
+  `.lon: Longitude value.`
 The latitude and longitude values will later be used to plot the vehicle's location on a map.
 
 ### 2. Loading and Processing Velocity Data (bestvel.csv)
