@@ -28,7 +28,7 @@ A directory containing images: /path/to/images where images are named in the for
     ├── bestpos.csv            # GNSS Data: latitude, longitude, and time
     ├── bestvel.csv            # BestVel Data: horizontal speed and time
     ├── basler.csv             # Basler camera data: time of images
-    ├── /baleno_images         # Directory of images captured by the Basler camera
+    ├── /images         # Directory of images captured by the Basler camera
     └── main_script.py         # Main Python script to process and merge data
 
 
