@@ -75,7 +75,7 @@ horizontal_speed: Speed in km/h.
 image_filename: Filename of the corresponding Basler image.
 ### 5. Image Association
 The script searches through the /baleno_images directory to find the nearest image filename based on the timestamp.
-The image filenames follow a specific naming pattern ( 'image_%Y-%m-%d-%H-%M-%S.%f.jpg' ), and the script uses the timestamp to match the images to GNSS data points.
+The image filenames follow a specific naming pattern  `image_%Y-%m-%d-%H-%M-%S.%f.jpg` , and the script uses the timestamp to match the images to GNSS data points.
 If an image is found for a particular GNSS point, the filename is added to the merged DataFrame.
 ### 6. Creating the Map with Folium
 Once the data is merged, the script creates a visual map using the folium library. The map is centered around the mean latitude and longitude values from the GNSS data.
