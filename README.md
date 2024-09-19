@@ -42,8 +42,8 @@ A DataFrame is created using this data. This GNSS DataFrame serves as the founda
 ### Example columns in bestpos.csv:
 
 time: Timestamp of the GNSS data.
-**.lat: Latitude value.**
-**.lon: Longitude value.**
+    .lat: Latitude value.
+    .lon: Longitude value.
 The latitude and longitude values will later be used to plot the vehicle's location on a map.
 
 ### 2. Loading and Processing Velocity Data (bestvel.csv)
@@ -95,7 +95,7 @@ The color bar is saved as an image (colorbar6.png) and can be used as a referenc
 The output of this script is a highly interactive and visual representation of GNSS data, vehicle speed, and corresponding images. Here's a more detailed breakdown of each output component:
 
 ### 1. Interactive Map (HTML File)
-File name: img_test6.html
+    File name: img_test6.html
 
 Description: The primary output of the script is an interactive map generated using the folium library. This map displays the vehicle's path by plotting markers for each GNSS data point on a satellite map background from Google Maps.
 
@@ -105,11 +105,12 @@ Map Centering: The map is centered on the mean latitude and longitude from the G
 Marker Visualization: Each GNSS point is represented by a CircleMarker. The markers are color-coded based on the vehicle's horizontal speed. The color gradient is a visual cue, with:
 Red for slower speeds.
 Green for faster speeds.
-Popups:
+#### Popups:
 Each marker includes a popup with detailed information. The popup shows:
 Latitude and Longitude values of the GNSS point.
 Speed at that point in km/h.
-Image: If a corresponding image from the Basler camera is available, the popup includes a thumbnail of the image, providing a visual context for the location at that time.
+#### Image: 
+If a corresponding image from the Basler camera is available, the popup includes a thumbnail of the image, providing a visual context for the location at that time.
 This makes the map highly interactive, allowing the user to explore both the path and the visual surroundings at each GNSS point.
 Use Cases:
 
@@ -118,12 +119,12 @@ Image Verification: The images provide a visual snapshot of the vehicle's surrou
 ### 2. Color Bar (PNG Image)
 File name: colorbar6.png
 Description: This is a color bar image created using matplotlib. It serves as a legend for the map, showing the mapping between marker colors and vehicle speeds.
-Features:
+#### Features:
 The color bar ranges from red to green, indicating slow to fast speeds, respectively. The horizontal color bar includes speed values (in km/h) to help interpret the color coding on the map.
 It helps users quickly understand how the vehicle's speed changes along the route by looking at the marker colors on the map.
 ### 3. Data Files (CSV)
 Processed CSV files are generated for further analysis or reuse in other applications.
-File names:
+#### File names:
 gnss_data.csv: Contains GNSS data with time, latitude, and longitude columns.
 bestvel_data.csv: Contains velocity data with time and horizontal_speed (in km/h).
 basler_data.csv: Contains image timestamps from the Basler camera.
